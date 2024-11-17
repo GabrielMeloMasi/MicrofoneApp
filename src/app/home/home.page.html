@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Audio Recorder</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <ion-button (click)="startRecording()">Iniciar Gravação</ion-button>
+    <ion-button (click)="stopRecording()">Parar Gravação</ion-button>
+    <ion-button (click)="playRecording()" [disabled]="!audioPath">Reproduzir Áudio</ion-button>
+  </div>
+</ion-content>
